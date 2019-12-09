@@ -1,0 +1,13 @@
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\obj\Debug\FRZ_rec.csprojAssemblyReference.cache
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\obj\Debug\FRZ_rec.Form1.resources
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\obj\Debug\FRZ_rec.Properties.Resources.resources
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\obj\Debug\FRZ_rec.csproj.GenerateResource.cache
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\bin\Debug\FRZ_rec.exe.config
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\bin\Debug\FRZ_rec.exe
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\bin\Debug\FRZ_rec.pdb
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\bin\Debug\Emgu.CV.xml
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\bin\Debug\Emgu.CV.UI.xml
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\bin\Debug\Emgu.Util.xml
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\obj\Debug\FRZ_rec.csproj.CopyComplete
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\obj\Debug\FRZ_rec.exe
+C:\Users\amara\source\repos\FRZ_rec\FRZ_rec\obj\Debug\FRZ_rec.pdb
