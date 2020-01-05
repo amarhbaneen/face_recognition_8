@@ -8,6 +8,7 @@ namespace FRZ_rec
 {
     static class Program
     {
+       
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,7 @@ namespace FRZ_rec
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new login());
         }
     }
 }
