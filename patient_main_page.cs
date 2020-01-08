@@ -18,7 +18,7 @@ namespace MultiFaceRec
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmPrincipal x = new FrmPrincipal();
+            add_by_cam x = new add_by_cam();
             x.Show();
         }
 
