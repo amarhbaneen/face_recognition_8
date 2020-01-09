@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using mlava;
 
 namespace MultiFaceRec
 {
@@ -31,12 +32,19 @@ namespace MultiFaceRec
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            Form1 s = new Form1();
+            s.Show();
         }
 
         private void patient_main_page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
