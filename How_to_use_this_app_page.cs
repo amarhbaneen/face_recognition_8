@@ -30,5 +30,10 @@ namespace MultiFaceRec
         {
             this.SendToBack();
         }
+
+        private void How_to_use_this_app_page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

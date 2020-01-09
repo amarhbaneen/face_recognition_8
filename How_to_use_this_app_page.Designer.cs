@@ -132,6 +132,7 @@
             this.Controls.Add(this.label1);
             this.Name = "How_to_use_this_app_page";
             this.Text = "How_to_use_this_app_page";
+            this.Load += new System.EventHandler(this.How_to_use_this_app_page_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

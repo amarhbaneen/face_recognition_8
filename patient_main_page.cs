@@ -33,5 +33,10 @@ namespace MultiFaceRec
         {
             Application.Exit();
         }
+
+        private void patient_main_page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

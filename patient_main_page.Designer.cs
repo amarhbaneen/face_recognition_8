@@ -96,6 +96,7 @@
             this.Controls.Add(this.button1);
             this.Name = "patient_main_page";
             this.Text = "patient_main_page";
+            this.Load += new System.EventHandler(this.patient_main_page_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
