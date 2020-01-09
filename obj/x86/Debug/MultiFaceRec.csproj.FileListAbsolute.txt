@@ -128,7 +128,6 @@ C:\Users\amaral3\Desktop\work\obj\x86\Debug\MultiFaceRec.exe
 C:\Users\amaral3\Desktop\work\obj\x86\Debug\MultiFaceRec.pdb
 C:\Users\amaral3\Desktop\work\obj\x86\Debug\MultiFaceRec.add_by_cam.resources
 C:\Users\amaral3\Desktop\master\obj\x86\Debug\MultiFaceRec.csprojAssemblyReference.cache
-C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.add.resources
 C:\Users\amaral3\Desktop\master\obj\x86\Debug\MultiFaceRec.add_by_cam.resources
 C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.Form1.resources
 C:\Users\amaral3\Desktop\master\obj\x86\Debug\MultiFaceRec.How_to_use_this_app_page.resources
@@ -144,7 +143,6 @@ C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.inforamtion_manger.resources
 C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.informationabout_sick.resources
 C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.mal.resources
 C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.manger.resources
-C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.Sick.resources
 C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.viewreports.resources
 C:\Users\amaral3\Desktop\master\bin\Debug\DlibDotNetNative.dll
 C:\Users\amaral3\Desktop\master\bin\Debug\DlibDotNetNativeDnn.dll
@@ -184,3 +182,8 @@ C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.csproj.GenerateResource
 C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.csproj.CopyComplete
 C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.exe
 C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.pdb
+C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.MyData.resources
+C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.viewreportsmanger.resources
+C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.infPAM.resources
+C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.infPM.resources
+C:\Users\amaral3\Desktop\master\obj\x86\Debug\mlava.Insert.resources

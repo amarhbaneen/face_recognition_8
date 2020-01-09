@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using mlava;
 
 namespace MultiFaceRec
 {
@@ -15,7 +16,7 @@ namespace MultiFaceRec
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run();
+            Application.Run(new Form1());
             
             
         }
