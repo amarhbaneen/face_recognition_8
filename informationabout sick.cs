@@ -3,7 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace mlava
+namespace MultiFaceRec
 {
     public partial class informationabout_sick : Form
     {

@@ -8,20 +8,41 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MultiFaceRec;
+using mlava;
 
-namespace mlava
+namespace MultiFaceRec
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-        }
+            label5.Text = DateTime.Now.ToString("HH:mm:ss tt");
+            textBox2.UseSystemPasswordChar = true;
 
-        private void button1_Click(object sender, EventArgs e)
+            if (DateTime.Now.Hour < 12)
+            {
+                label6.Text = " בוקר טוב";
+            }
+            else if (DateTime.Now.Hour < 17)
+            {
+                label6.Text = "צהוריים טוביים";
+                
+            }
+            else if (DateTime.Now.Hour < 05)
+            {
+                label6.Text = "לילה טוב";
+
+            }
+            else 
+            {
+                label6.Text = "ערב טוב";
+            }
+        }
+            private void button1_Click(object sender, EventArgs e)
         {
-          
-            String source= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amaral3\Desktop\master\Data.mdf;Integrated Security=True";
+            
+            String source= @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\amara\Desktop\master\Data.mdf; Integrated Security = True";
             SqlConnection con = new SqlConnection(source);
             con.Open();
             String sqlSelectquery = " Select * From [Table]  where Username ='" + textBox1.Text + "'and Password ='" + textBox2.Text + "'";
@@ -30,10 +51,13 @@ namespace mlava
             if (dr.Read())
             {
                String name=dr["username"].ToString();
-                MessageBox.Show(name);
                 String a = dr["kind"].ToString();
-               if (a == "partner") 
+                Singleton user = Singleton.Instance;
+                user.setuser(name);
+                MessageBox.Show(dr["kind"].ToString());
+                if (a == "partner") 
                 {
+                   
                     this.Hide();
                     mal ss = new mal();
                     ss.Show();
@@ -81,6 +105,11 @@ namespace mlava
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             textBox2.UseSystemPasswordChar = true;
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

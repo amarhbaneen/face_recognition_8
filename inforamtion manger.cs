@@ -8,7 +8,7 @@ using System.Text;
 
 using System.Windows.Forms;
 
-namespace mlava
+namespace MultiFaceRec
 {
     public partial class inforamtion_manger : Form
     {

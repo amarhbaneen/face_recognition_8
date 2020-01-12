@@ -5,7 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-//using System.Threading.Tasks;
+using MultiFaceRec;
+
 using System.Windows.Forms;
 
 namespace mlava
@@ -17,6 +18,8 @@ namespace mlava
             InitializeComponent();
         }
 
+       
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -24,9 +27,7 @@ namespace mlava
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form1 s = new Form1();
-            s.Show();
+            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)

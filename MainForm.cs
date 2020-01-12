@@ -7,6 +7,7 @@ using Emgu.CV.Structure;
 using Emgu.CV.CvEnum;
 using System.IO;
 using System.Diagnostics;
+using mlava;
 
 namespace MultiFaceRec
 {
@@ -80,7 +81,11 @@ namespace MultiFaceRec
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            this.SendToBack();
+            this.Hide();
+            mal news = new mal();
+            news.Show();
+
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -240,10 +245,7 @@ namespace MultiFaceRec
 
                 }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Process.Start("Donate.html");
-        }
+        
 
     }
 }

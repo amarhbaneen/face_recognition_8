@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using MultiFaceRec;
 
-namespace mlava
+namespace MultiFaceRec
 {
     public partial class mal : Form
     {
@@ -49,6 +49,11 @@ namespace mlava
             FrmPrincipal newfrm = new FrmPrincipal();
             newfrm.Show();
             this.Hide();
+        }
+
+        private void mal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

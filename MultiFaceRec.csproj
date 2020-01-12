@@ -73,11 +73,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add.designer.cs">
+      <DependentUpon>add.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_by_cam.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="add_by_cam.designer.cs">
       <DependentUpon>add_by_cam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
     </Compile>
     <Compile Include="EigenObjectRecognizer.cs" />
     <Compile Include="infPAM.cs">
@@ -146,6 +158,12 @@
     <Compile Include="manger.designer.cs">
       <DependentUpon>manger.cs</DependentUpon>
     </Compile>
+    <Compile Include="My partner details .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My partner details .designer.cs">
+      <DependentUpon>My partner details .cs</DependentUpon>
+    </Compile>
     <Compile Include="MyData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +178,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMyData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowMyData.Designer.cs">
+      <DependentUpon>ShowMyData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Singleton.cs" />
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="viewreports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,8 +209,14 @@
     <Compile Include="viewreportsmanger.designer.cs">
       <DependentUpon>viewreportsmanger.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="add.resx">
+      <DependentUpon>add.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_by_cam.resx">
       <DependentUpon>add_by_cam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="infPAM.resx">
       <DependentUpon>infPAM.cs</DependentUpon>
@@ -208,6 +251,9 @@
     <EmbeddedResource Include="manger.resx">
       <DependentUpon>manger.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My partner details .resx">
+      <DependentUpon>My partner details .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyData.resx">
       <DependentUpon>MyData.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +270,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMyData.resx">
+      <DependentUpon>ShowMyData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewreports.resx">
       <DependentUpon>viewreports.cs</DependentUpon>
     </EmbeddedResource>

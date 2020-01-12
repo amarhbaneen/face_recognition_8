@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace mlava
+namespace MultiFaceRec
 {
     public partial class infPAM : Form
     {
@@ -25,7 +25,7 @@ namespace mlava
 
         private void infPAM_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amaral3\Desktop\master\Data.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amara\Desktop\master\Data.mdf;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("Select * From [Table] ", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);

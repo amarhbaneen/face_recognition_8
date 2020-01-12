@@ -22,5 +22,7 @@ namespace MultiFaceRec.Properties {
                 return defaultInstance;
             }
         }
+
+        public string DataConnectionString { get; internal set; }
     }
 }

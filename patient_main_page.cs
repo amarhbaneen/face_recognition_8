@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using MultiFaceRec;
 using mlava;
 
 namespace MultiFaceRec
@@ -44,7 +45,8 @@ namespace MultiFaceRec
 
         private void button5_Click(object sender, EventArgs e)
         {
-           
+            My_partner_details det = new My_partner_details();
+            det.Show();
         }
     }
 }

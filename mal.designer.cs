@@ -1,4 +1,4 @@
-﻿namespace mlava
+﻿namespace MultiFaceRec
 {
     partial class mal
     {
@@ -97,6 +97,7 @@
             this.Controls.Add(this.button1);
             this.Name = "mal";
             this.Text = "mal";
+            this.Load += new System.EventHandler(this.mal_Load);
             this.ResumeLayout(false);
 
         }

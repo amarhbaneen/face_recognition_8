@@ -1,4 +1,4 @@
-﻿namespace mlava
+﻿namespace MultiFaceRec
 {
     partial class help
     {

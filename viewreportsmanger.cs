@@ -5,10 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-//using System.Threading.Tasks;
 using System.Windows.Forms;
+using mlava;
 
-namespace mlava
+namespace MultiFaceRec
 {
     public partial class viewreportsmanger : Form
     {
@@ -33,6 +33,11 @@ namespace mlava
         {
             this.Hide();
             this.SendToBack();
+        }
+
+        private void viewreportsmanger_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

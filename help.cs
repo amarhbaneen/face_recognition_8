@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace mlava
+namespace MultiFaceRec
 {
     public partial class help : Form
     {
