@@ -37,6 +37,9 @@ namespace mlava
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+
+            //---------------------------------------------------------------
             byte[] images = null;
             FileStream streem = new FileStream(imglo, FileMode.Open, FileAccess.Read);
             BinaryReader brs = new BinaryReader(streem);
@@ -46,8 +49,12 @@ namespace mlava
             string sqlQvery = "Update  infTable set firstname=@firstname ,LastName=@LastName,photo=@photo where theid=@theid";
             cmd = new SqlCommand(sqlQvery, connection);
             cmd.Parameters.Add(new SqlParameter("@theid", textBox3.Text));
+            
             cmd.Parameters.Add(new SqlParameter("@firstname", textBox1.Text));
+            
             cmd.Parameters.Add(new SqlParameter("@LastName", textBox2.Text));
+            
+          
             cmd.Parameters.Add(new SqlParameter("@photo", images));
             int N = cmd.ExecuteNonQuery();
             MessageBox.Show(N.ToString() + "Datas Update Successfully ");

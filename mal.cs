@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using MultiFaceRec;
+using mlava;
 
 namespace MultiFaceRec
 {
@@ -9,6 +10,9 @@ namespace MultiFaceRec
         public mal()
         {
             InitializeComponent();
+            Singleton user = Singleton.Instance;
+            string nameuser = user.getuser();
+            label2.Text = nameuser;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,8 +31,8 @@ namespace MultiFaceRec
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            add_by_cam ss = new add_by_cam();
-            ss.Show();
+            addapatient newx = new addapatient();
+            newx.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -48,12 +52,30 @@ namespace MultiFaceRec
         {
             FrmPrincipal newfrm = new FrmPrincipal();
             newfrm.Show();
-            this.Hide();
+            
         }
 
         private void mal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            updatesick upsick = new updatesick();
+            upsick.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            askingaboutadd innew = new askingaboutadd();
+            innew.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            about abouty = new about();
+            abouty.Show();
         }
     }
 }

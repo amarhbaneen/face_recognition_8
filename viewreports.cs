@@ -34,5 +34,10 @@ namespace MultiFaceRec
             this.Hide();
             this.SendToBack();
         }
+
+        private void viewreports_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

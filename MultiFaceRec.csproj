@@ -73,17 +73,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="add.cs">
+    <Compile Include="about.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="add.designer.cs">
-      <DependentUpon>add.cs</DependentUpon>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addapatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addapatient.Designer.cs">
+      <DependentUpon>addapatient.cs</DependentUpon>
     </Compile>
     <Compile Include="add_by_cam.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="add_by_cam.designer.cs">
       <DependentUpon>add_by_cam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="askingaboutadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="askingaboutadd.Designer.cs">
+      <DependentUpon>askingaboutadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Delete.cs">
       <SubType>Form</SubType>
@@ -176,6 +193,12 @@
     <Compile Include="patient_main_page.Designer.cs">
       <DependentUpon>patient_main_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="patierndet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patierndet.Designer.cs">
+      <DependentUpon>patierndet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search.cs">
@@ -197,6 +220,12 @@
     <Compile Include="Update.designer.cs">
       <DependentUpon>Update.cs</DependentUpon>
     </Compile>
+    <Compile Include="updatesick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatesick.Designer.cs">
+      <DependentUpon>updatesick.cs</DependentUpon>
+    </Compile>
     <Compile Include="viewreports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,11 +238,17 @@
     <Compile Include="viewreportsmanger.designer.cs">
       <DependentUpon>viewreportsmanger.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="add.resx">
-      <DependentUpon>add.cs</DependentUpon>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addapatient.resx">
+      <DependentUpon>addapatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_by_cam.resx">
       <DependentUpon>add_by_cam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="askingaboutadd.resx">
+      <DependentUpon>askingaboutadd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Delete.resx">
       <DependentUpon>Delete.cs</DependentUpon>
@@ -260,6 +295,9 @@
     <EmbeddedResource Include="patient_main_page.resx">
       <DependentUpon>patient_main_page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="patierndet.resx">
+      <DependentUpon>patierndet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -279,12 +317,27 @@
     <EmbeddedResource Include="Update.resx">
       <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="updatesick.resx">
+      <DependentUpon>updatesick.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewreports.resx">
       <DependentUpon>viewreports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewreportsmanger.resx">
       <DependentUpon>viewreportsmanger.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataDataSet.xsc">
+      <DependentUpon>DataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataDataSet.xss">
+      <DependentUpon>DataDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -318,9 +371,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Data.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -329,6 +380,23 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Data.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\omega3s-vitaminb-and-alzheimers-large.jpg" />
+    <None Include="Resources\O2-Refresh1.jpg" />
+    <None Include="Resources\Magnifying-Glass.jpg" />
+    <None Include="Resources\kisspng-computer-icons-database-download-grey-wallpaper-5ac575ca785e04.4148235415228901864931.jpg" />
+    <None Include="Resources\istockphoto-851960146-1024x1024.jpg" />
+    <None Include="Resources\iStock-949812160.jpg" />
+    <None Include="Resources\huawei-mate-30-pro-wallpaper-usewallpaper-2-1080x2340.jpg" />
+    <None Include="Resources\help-me_3092548.jpg" />
+    <None Include="Resources\financials-1.jpg" />
+    <None Include="Resources\e0873b6ce7a6d0f73526d90cdb85503e.jpg" />
+    <None Include="Resources\doctor_holding_patient_hand.jpg" />
+    <None Include="Resources\delivery-man-export-map.jpg" />
+    <None Include="Resources\44299297-about-me.jpg" />
+    <None Include="Resources\4926305-red-x.jpg" />
+    <None Include="Resources\1593723.jpg" />
+    <None Include="Resources\653c759f23a58107ca0ff57de215d149.jpg" />
+    <None Include="Resources\83-831664_download-wallpaper-exit-sign-clipart-clipart-emergency.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

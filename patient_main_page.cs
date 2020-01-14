@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using MultiFaceRec;
 using mlava;
+using System.Data.SqlClient;
+
 
 namespace MultiFaceRec
 {
@@ -40,13 +42,26 @@ namespace MultiFaceRec
 
         private void patient_main_page_Load(object sender, EventArgs e)
         {
-            
+            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\amara\Desktop\master\Data.mdf; Integrated Security = True");
+            SqlDataAdapter sda = new SqlDataAdapter("Select * From [Table] ", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            Singleton user = Singleton.Instance;
+            string nameuser = user.getuser();
+            label2.Text = nameuser;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             My_partner_details det = new My_partner_details();
             det.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            patierndet patdet = new patierndet();
+            patdet.Show();
+            
         }
     }
 }

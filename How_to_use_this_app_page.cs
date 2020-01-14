@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using mlava;
 
 namespace MultiFaceRec
 {
@@ -28,7 +29,8 @@ namespace MultiFaceRec
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.SendToBack();
+            this.Hide();
+            this.SendToBack(); /// 
         }
 
         private void How_to_use_this_app_page_Load(object sender, EventArgs e)

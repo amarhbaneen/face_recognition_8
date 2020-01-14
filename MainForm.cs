@@ -81,9 +81,7 @@ namespace MultiFaceRec
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            mal news = new mal();
-            news.Show();
+            this.SendToBack();
 
             
         }

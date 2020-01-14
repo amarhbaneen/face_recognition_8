@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using mlava;
 
 namespace MultiFaceRec
 {
@@ -15,16 +16,31 @@ namespace MultiFaceRec
         private void informationabout_sick_Load(object sender, EventArgs e)
         {
             // String source = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\אלטורי\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30";
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amaral3\Desktop\master\Data.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amara\Desktop\master\Data.mdf;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("Select * From [Table] ", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            Singleton user = Singleton.Instance;
+            string nameuser = user.getuser();
             foreach (DataRow row in dt.Rows)
             { 
-               // listBox1.Items.Add(row["password"].ToString());
-                listBox1.Items.Add(row["mypartner"]);
+               if(row["kind"].ToString() == "sick" && row["work"].ToString() == nameuser)
+                {
+                    listBox1.Items.Add(string.Format(" name : {0} {1} | phone number  : {2} |", row["username"], row["lastname"], row["phonenumber"]));
+                }
+                
             }
 
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.SendToBack();
         }
     }
 }

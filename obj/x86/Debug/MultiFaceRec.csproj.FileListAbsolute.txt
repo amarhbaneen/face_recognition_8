@@ -154,11 +154,6 @@ C:\Users\amara\Desktop\master\bin\Debug\Data.mdf
 C:\Users\amara\Desktop\master\bin\Debug\Data_log.ldf
 C:\Users\amara\Desktop\master\bin\Debug\MultiFaceRec.exe
 C:\Users\amara\Desktop\master\bin\Debug\MultiFaceRec.pdb
-C:\Users\amara\Desktop\master\bin\Debug\Emgu.CV.xml
-C:\Users\amara\Desktop\master\bin\Debug\Emgu.CV.UI.xml
-C:\Users\amara\Desktop\master\bin\Debug\Emgu.Util.xml
-C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.csprojAssemblyReference.cache
-C:\Users\amara\Desktop\master\obj\x86\Debug\mlava.add.resources
 C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.add_by_cam.resources
 C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.How_to_use_this_app_page.resources
 C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.FrmPrincipal.resources
@@ -202,3 +197,10 @@ C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.ShowMyData.resources
 C:\Users\amara\Desktop\master\obj\x86\Debug\mlava.Update.resources
 C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.viewreports.resources
 C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.viewreportsmanger.resources
+C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.csprojAssemblyReference.cache
+C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.patierndet.resources
+C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.askingaboutadd.resources
+C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.addapatient.resources
+C:\Users\amara\Desktop\master\bin\Debug\MultiFaceRec.exe.config
+C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.updatesick.resources
+C:\Users\amara\Desktop\master\obj\x86\Debug\MultiFaceRec.about.resources

@@ -34,5 +34,10 @@ namespace mlava
             this.Hide();
             this.SendToBack();
         }
+
+        private void Delete_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

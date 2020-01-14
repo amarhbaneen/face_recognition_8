@@ -26,7 +26,8 @@ namespace mlava
             sda.Fill(dt);
             Singleton user = Singleton.Instance;
             string nameuser = user.getuser();
-            MessageBox.Show(nameuser);
+            
+           
             foreach (DataRow row in dt.Rows ) 
             {
                 
@@ -34,11 +35,21 @@ namespace mlava
                 if (nameu == nameuser && row["kind"].ToString() == "sick")
                 {
                     string name = row["work"].ToString();
-                
-                    listBox1.Items.Add(name);
+                    
+                    label2.Text = name;
+                    SqlDataAdapter sda2 = new SqlDataAdapter("Select * From [Table] WHERE username = '" + name + "'", con);
+                    DataTable dt2 = new DataTable();
+                    sda2.Fill(dt2);
+                    string lname = dt2.Rows[0][4].ToString();
+                    string pnum = dt2.Rows[0][5].ToString();
+                    label1.Text = pnum;
+                    label3.Text = lname;
+
+                    //listBox1.Items.Add(name);
 
                 }
             }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,6 +59,11 @@ namespace mlava
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
